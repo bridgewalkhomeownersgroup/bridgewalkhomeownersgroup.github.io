@@ -124,6 +124,10 @@ h1 { margin-bottom: 25px; font-size: clamp(1.8rem, 4.7vw, 4rem); letter-spacing:
 .waste-actions + .freshness-note { margin-bottom: 0; }
 
 .utilities-section, .landscaping-section, .safety-section, .emergency-care-section { scroll-margin-top: 72px; }
+.utility-provider-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin: 38px 2px 16px; padding-top: 28px; border-top: 1px solid var(--line); }
+.section-heading + .utility-provider-heading { margin-top: 0; padding-top: 0; border-top: 0; }
+.utility-provider-heading span { color: var(--green); font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.utility-provider-heading h3 { margin: 0; font-size: 1.75rem; }
 .utility-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .utility-emergency, .utility-contact, .care-card { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(28px, 4vw, 42px); border: 1px solid var(--line); border-radius: var(--radius); }
 .utility-emergency { color: white; background: var(--green-dark); border-color: var(--green-dark); }
@@ -132,7 +136,8 @@ h1 { margin-bottom: 25px; font-size: clamp(1.8rem, 4.7vw, 4rem); letter-spacing:
 .utility-emergency p { margin: 0 0 28px; color: #c4d6cc; }
 .utility-emergency .button-primary { margin-top: auto; color: #2f2109; background: var(--gold); }
 .utility-contact { background: var(--white); }
-.utility-email { color: var(--green); font-size: clamp(1rem, 2vw, 1.25rem); font-weight: 800; overflow-wrap: anywhere; text-underline-offset: 4px; }
+.utility-email, .utility-phone { color: var(--green); font-size: clamp(1rem, 2vw, 1.25rem); font-weight: 800; overflow-wrap: anywhere; text-underline-offset: 4px; }
+.utility-contact > p { margin: 18px 0 0; color: var(--muted); }
 .utility-contact address { margin-top: 22px; color: var(--muted); font-style: normal; }
 .utility-links { display: flex; flex-wrap: wrap; gap: 18px; margin-top: auto; padding-top: 28px; }
 .utility-links a { color: var(--green); font-size: .8rem; font-weight: 750; }
