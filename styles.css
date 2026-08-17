@@ -42,9 +42,9 @@ button, input { font: inherit; }
 }
 .brand { display: flex; align-items: center; gap: 11px; color: var(--green-dark); font-weight: 760; text-decoration: none; }
 .brand-mark { display: grid; place-items: center; width: 38px; height: 38px; color: white; background: var(--green); border-radius: 11px; font-size: 0.75rem; letter-spacing: 0.08em; }
-nav { display: flex; min-width: 0; gap: 28px; overflow-x: auto; white-space: nowrap; scrollbar-width: none; }
+nav { display: flex; min-width: 0; gap: 18px; overflow-x: auto; white-space: nowrap; scrollbar-width: none; }
 nav::-webkit-scrollbar { display: none; }
-nav a { color: #38463e; font-size: 0.9rem; font-weight: 650; text-decoration: none; }
+nav a { color: #38463e; font-size: 0.82rem; font-weight: 650; text-decoration: none; }
 nav a:hover { color: var(--green); }
 
 .hero { padding-block: 92px 72px; }
@@ -123,7 +123,7 @@ h1 { margin-bottom: 25px; font-size: clamp(1.8rem, 4.7vw, 4rem); letter-spacing:
 .waste-links a { color: white; font-size: .82rem; font-weight: 750; }
 .waste-actions + .freshness-note { margin-bottom: 0; }
 
-.landscaping-section { scroll-margin-top: 72px; }
+.landscaping-section, .safety-section, .emergency-care-section { scroll-margin-top: 72px; }
 .landscaping-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 16px; }
 .service-day-card, .landscaping-contact { padding: clamp(28px, 4vw, 42px); border: 1px solid var(--line); border-radius: var(--radius); }
 .service-day-card { display: flex; flex-direction: column; align-items: flex-start; color: white; background: var(--green); border-color: var(--green); }
@@ -142,7 +142,6 @@ h1 { margin-bottom: 25px; font-size: clamp(1.8rem, 4.7vw, 4rem); letter-spacing:
 .landscaping-links { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 20px; padding: 18px 2px 0; border-top: 1px solid var(--line); }
 .landscaping-links a { color: var(--green); font-size: .82rem; font-weight: 750; }
 
-.safety-section { scroll-margin-top: 72px; }
 .emergency-callout { display: grid; grid-template-columns: auto 1fr auto; gap: 32px; align-items: center; margin-bottom: 24px; padding: 28px 30px; color: white; background: var(--green-dark); border-radius: var(--radius); }
 .emergency-callout > div { display: flex; flex-direction: column; min-width: 150px; }
 .emergency-callout span { color: #a9cfba; font-size: .7rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
@@ -157,6 +156,22 @@ h1 { margin-bottom: 25px; font-size: clamp(1.8rem, 4.7vw, 4rem); letter-spacing:
 .safety-note { display: flex; justify-content: space-between; gap: 30px; align-items: center; margin-top: 20px; padding: 20px 22px; background: #fff8e8; border: 1px solid #ead49d; border-radius: 14px; }
 .safety-note p { max-width: 720px; margin: 0; color: #6e5b36; font-size: .84rem; }
 .safety-note a { flex: 0 0 auto; color: #6e4c13; font-size: .82rem; font-weight: 750; }
+
+.emergency-care-section { background: #edf2e9; }
+.care-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.care-card { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(28px, 4vw, 42px); background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); }
+.care-card h3 { max-width: 480px; margin-bottom: 18px; font-size: clamp(1.8rem, 3vw, 2.5rem); }
+.care-card address { color: var(--muted); font-style: normal; }
+.care-phone { margin-top: 18px; color: var(--green); font-size: 1.25rem; font-weight: 800; text-underline-offset: 4px; }
+.care-location { margin: -8px 0 14px; color: var(--muted); font-weight: 700; }
+.veterinary-care { color: white; background: var(--green-dark); border-color: var(--green-dark); }
+.veterinary-care .card-label, .veterinary-care address, .veterinary-care .care-location { color: #bcd0c4; }
+.veterinary-care .care-phone { color: white; }
+.care-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--line); }
+.veterinary-care .care-actions { border-color: rgba(255,255,255,.17); }
+.care-actions > a:not(.button) { color: var(--green); font-size: .8rem; font-weight: 750; }
+.veterinary-care .care-actions > a:not(.button) { color: white; }
+.veterinary-care .button-primary { color: #2f2109; background: var(--gold); }
 
 .meetings-section { color: white; background: var(--green); }
 .section-heading.inverse .eyebrow { color: #a9cfba; }
@@ -220,7 +235,7 @@ footer { color: #c8d7ce; background: #0d2e22; }
 .privacy-content a { color: var(--green); font-weight: 700; text-underline-offset: 4px; }
 
 @media (max-width: 880px) {
-  .section-heading, .contact-grid, .meeting-layout, .waste-guidance, .landscaping-layout { grid-template-columns: 1fr; }
+  .section-heading, .contact-grid, .meeting-layout, .waste-guidance, .landscaping-layout, .care-grid { grid-template-columns: 1fr; }
   .section-heading { gap: 18px; }
   .collection-schedule { grid-template-columns: repeat(2, 1fr); }
   .waste-actions { align-items: flex-start; flex-direction: column; }
