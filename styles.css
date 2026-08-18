@@ -78,7 +78,7 @@ h1 { margin-bottom: 25px; font-size: clamp(1.8rem, 4.7vw, 4rem); letter-spacing:
 .link-row { display: flex; gap: 28px; }
 .link-row a { text-underline-offset: 5px; text-decoration-color: rgba(255,255,255,.35); }
 
-.content-section, .meetings-section { padding-block: 110px; }
+.content-section, .meetings-section { padding-block: 110px; border-top: 1px solid rgba(23, 79, 59, 0.12); }
 .section-heading { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: end; margin-bottom: 48px; }
 .section-heading h2 { margin-bottom: 0; font-size: clamp(2.4rem, 5vw, 4.3rem); letter-spacing: -0.035em; }
 .section-heading > p { max-width: 470px; margin: 0 0 6px; color: var(--muted); }
