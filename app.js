@@ -5,6 +5,19 @@ const count = document.querySelector("#document-count");
 const noResults = document.querySelector("#no-results");
 const filterButtons = [...document.querySelectorAll(".filter-button")];
 
+document.addEventListener("click", (event) => {
+  if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+  const link = event.target.closest("a[href]");
+  if (!link) return;
+
+  const href = link.getAttribute("href");
+  if (!href || href.startsWith("#") || href.startsWith("tel:") || href.startsWith("mailto:")) return;
+
+  const returnPoint = link.closest("section[id], footer[id]");
+  if (returnPoint) window.history.replaceState(window.history.state, "", `#${returnPoint.id}`);
+});
+
 const categoryLabels = {
   meeting_agendas: "Meeting agenda",
   meeting_minutes: "Meeting minutes",
