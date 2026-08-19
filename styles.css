@@ -123,7 +123,7 @@ h1 { margin-bottom: 25px; font-size: clamp(1.8rem, 4.7vw, 4rem); letter-spacing:
 .waste-links a { color: white; font-size: .82rem; font-weight: 750; }
 .waste-actions + .freshness-note { margin-bottom: 0; }
 
-.utilities-section, .landscaping-section, .safety-section, .emergency-care-section { scroll-margin-top: 72px; }
+.utilities-section, .homestead-section, .landscaping-section, .safety-section, .emergency-care-section { scroll-margin-top: 72px; }
 .utility-provider-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin: 38px 2px 16px; padding-top: 28px; border-top: 1px solid var(--line); }
 .section-heading + .utility-provider-heading { margin-top: 0; padding-top: 0; border-top: 0; }
 .utility-provider-heading span { color: var(--green); font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
@@ -141,6 +141,20 @@ h1 { margin-bottom: 25px; font-size: clamp(1.8rem, 4.7vw, 4rem); letter-spacing:
 .utility-contact address { margin-top: 22px; color: var(--muted); font-style: normal; }
 .utility-links { display: flex; flex-wrap: wrap; gap: 18px; margin-top: auto; padding-top: 28px; }
 .utility-links a { color: var(--green); font-size: .8rem; font-weight: 750; }
+.homestead-section { background: #edf2e9; }
+.homestead-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 16px; }
+.homestead-checklist { padding: clamp(28px, 4vw, 42px); border: 1px solid var(--line); border-radius: var(--radius); }
+.homestead-action h3 { margin-bottom: 16px; }
+.homestead-checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; background: var(--white); }
+.homestead-checklist .card-label { display: block; margin-bottom: 14px; }
+.homestead-checklist h3 { margin-bottom: 16px; font-size: 1.45rem; }
+.homestead-checklist ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: .88rem; }
+.homestead-checklist li + li { margin-top: 9px; }
+.homestead-support { display: flex; justify-content: space-between; align-items: center; gap: 32px; margin-top: 20px; padding: 22px 24px; background: #fff8e8; border: 1px solid #ead49d; border-radius: 14px; }
+.homestead-support p { max-width: 690px; margin: 0; color: #6e5b36; font-size: .84rem; }
+.homestead-support p a { font-weight: 750; }
+.homestead-support > div { display: flex; flex: 0 0 auto; flex-wrap: wrap; gap: 18px; }
+.homestead-support > div a { color: #6e4c13; font-size: .82rem; font-weight: 750; }
 .landscaping-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 16px; }
 .service-day-card, .landscaping-contact { padding: clamp(28px, 4vw, 42px); border: 1px solid var(--line); border-radius: var(--radius); }
 .service-day-card { display: flex; flex-direction: column; align-items: flex-start; color: white; background: var(--green); border-color: var(--green); }
@@ -252,10 +266,11 @@ footer { color: #c8d7ce; background: #0d2e22; }
 .privacy-content a { color: var(--green); font-weight: 700; text-underline-offset: 4px; }
 
 @media (max-width: 880px) {
-  .section-heading, .contact-grid, .meeting-layout, .waste-guidance, .utility-layout, .landscaping-layout, .care-grid { grid-template-columns: 1fr; }
+  .section-heading, .contact-grid, .meeting-layout, .waste-guidance, .utility-layout, .homestead-layout, .landscaping-layout, .care-grid { grid-template-columns: 1fr; }
   .section-heading { gap: 18px; }
   .collection-schedule { grid-template-columns: repeat(2, 1fr); }
   .waste-actions { align-items: flex-start; flex-direction: column; }
+  .homestead-support { align-items: flex-start; flex-direction: column; }
   .emergency-callout { grid-template-columns: 1fr; gap: 18px; }
   .emergency-callout .button { width: fit-content; }
   .landscaping-contact { grid-template-columns: 1fr; }
@@ -278,6 +293,7 @@ footer { color: #c8d7ce; background: #0d2e22; }
   .collection-schedule li { min-height: 112px; padding: 18px; }
   .collection-schedule strong { font-size: 1.25rem; }
   .waste-actions { padding: 22px; }
+  .homestead-checklist { grid-template-columns: 1fr; }
   .safety-grid { grid-template-columns: 1fr; }
   .safety-note { align-items: flex-start; flex-direction: column; gap: 12px; }
   .meeting-list { grid-template-columns: repeat(2, 1fr); }
