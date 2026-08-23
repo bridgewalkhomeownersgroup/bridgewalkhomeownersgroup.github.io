@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /maintenance-tips/water-heater/original/
 
 Sitemap: https://bridgewalkhomeownersgroup.github.io/sitemap.xml
