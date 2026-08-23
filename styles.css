@@ -266,11 +266,12 @@ footer { color: #c8d7ce; background: #0d2e22; }
 .privacy-content a { color: var(--green); font-weight: 700; text-underline-offset: 4px; }
 
 .not-found-page { min-height: calc(100vh - 340px); padding-block: clamp(72px, 12vw, 140px); text-align: center; }
-.not-found-code { margin-bottom: -18px; color: #dce9df; font-family: Georgia, "Times New Roman", serif; font-size: clamp(6rem, 18vw, 13rem); font-weight: 800; line-height: .75; letter-spacing: -.08em; }
-.not-found-page h1 { max-width: 800px; margin-inline: auto; white-space: normal; }
+.not-found-code { margin-bottom: 18px; color: #dce9df; font-family: Georgia, "Times New Roman", serif; font-size: clamp(6rem, 18vw, 13rem); font-weight: 800; line-height: .75; letter-spacing: -.08em; }
+.not-found-page > .eyebrow { display: block; margin-bottom: 20px; }
+.not-found-page h1 { max-width: 800px; margin: 0 auto 32px; white-space: normal; }
 .not-found-page > p { max-width: 620px; margin: 0 auto; color: var(--muted); font-size: 1.08rem; }
-.not-found-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 34px; }
-.not-found-links { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: center; margin-top: 34px; }
+.not-found-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 44px; }
+.not-found-links { display: flex; flex-wrap: wrap; gap: 16px 30px; justify-content: center; margin-top: 48px; }
 .not-found-links a { color: var(--green); font-size: .88rem; font-weight: 750; text-underline-offset: 4px; }
 
 .maintenance-hero { padding-block: 80px 72px; }
